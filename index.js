@@ -11,7 +11,8 @@ var express        = require("express"),
 //requring routes
 var indexRoutes      = require("./routes/index")
     
-mongoose.connect("mongodb://localhost/assignment");
+//mongoose.connect("mongodb://localhost/assignment");
+mongoose.connect("mongodb://avi:demo@ds251849.mlab.com:51849/assignment")
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));

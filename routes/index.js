@@ -70,7 +70,7 @@ router.get("/logout",function(req, res)
 {
     req.logout();
     req.flash("success","Logged out")
-    res.redirect("/");
+    res.redirect("/login");
 })
 
 // function isLoggedIn(req, res, next){
